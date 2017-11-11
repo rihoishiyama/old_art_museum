@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Judge : MonoBehaviour {
 	public GameObject parent;
+	public GameObject parent2;
+
 
 
 
@@ -12,16 +14,19 @@ public class Judge : MonoBehaviour {
 		switch (number) {
 
 		case 0:
-			Debug.Log("不正解");
-			parent.SetActive(false);
+			Debug.Log ("不正解");
+			parent.SetActive (false);
+			parent2.SetActive (true);
 			break;
 		case 1:
 			Debug.Log ("正解");
-			parent.SetActive(false);
+			parent.SetActive (false);
+			parent2.SetActive (true);
 			break;
 		case 2:
-			Debug.Log("不正解");
-			parent.SetActive(false);
+			Debug.Log ("不正解");
+			parent.SetActive (false);
+			parent2.SetActive (true);
 			break;
 		default:
 			break;
