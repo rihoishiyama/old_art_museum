@@ -219,12 +219,12 @@ PlayerSettings:
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
   appleEnableAutomaticSigning: 1
-  AndroidTargetDevice: 0
+  AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
-  AndroidTVCompatibility: 1
+  AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1
   m_AndroidBanners:
@@ -452,9 +452,6 @@ PlayerSettings:
   switchUdpSendBufferSize: 9
   switchUdpReceiveBufferSize: 42
   switchSocketBufferEfficiency: 4
-  switchSocketInitializeEnabled: 1
-  switchNetworkInterfaceManagerInitializeEnabled: 1
-  switchPlayerConnectionEnabled: 1
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -583,7 +580,10 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    4: VUFORIA_IOS_SETTINGS
+    7: VUFORIA_ANDROID_SETTINGS
+    14: VUFORIA_WSA_SETTINGS
   platformArchitecture:
     iOS: 2
   scriptingBackend:
@@ -628,10 +628,10 @@ PlayerSettings:
       CodeGeneration: False
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
-      InternetClient: False
+      InternetClient: True
       InternetClientServer: False
       Location: False
-      Microphone: False
+      Microphone: True
       MusicLibrary: False
       Objects3D: False
       PhoneCall: False
@@ -643,7 +643,7 @@ PlayerSettings:
       UserAccountInformation: False
       VideosLibrary: False
       VoipCall: False
-      WebCam: False
+      WebCam: True
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
